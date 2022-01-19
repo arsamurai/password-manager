@@ -1,0 +1,41 @@
+.wrapper {
+  max-width: 450px;
+  width: 100%;
+  margin: 50px auto;
+  padding: 0 15px;
+}
+
+.button {
+  color: #fff;
+  font-size: 18px;
+  padding: 10px 29px;
+  border: 1px solid #fff;
+  border-radius: 20px;
+  background-color: #161b22;
+  transition: all 0.2s ease-in-out;
+  cursor: pointer;
+  &:hover {
+    background-color: #010409;
+  }
+}
+
+.button-save {
+  background-color: #03521f;
+}
+
+.button-cancel {
+  background-color: #0a5746;
+}
+
+.button-edit {
+  background-color: #4f5e11;
+}
+
+.button-remove {
+  background-color: #4e1111;
+}
+
+.title {
+  text-align: center;
+  margin-bottom: 20px;
+}

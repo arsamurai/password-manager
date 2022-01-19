@@ -1,0 +1,177 @@
+@import "normalize";
+@import "global";
+
+$blue: #2196f3;
+
+.dashboard__wrapper {
+  max-width: 800px;
+  width: 100%;
+  margin: 50px auto;
+  padding: 0 15px;
+}
+
+.login,
+.register,
+.dashboard {
+  background-color: #0d1117;
+  padding: 15px;
+  border: 2px solid #fff;
+  border-radius: 10px;
+}
+
+.login__bottom,
+.register__bottom {
+  text-align: center;
+}
+
+.form {
+  &-field {
+    position: relative;
+    input {
+      color: #fff;
+      margin: 12px 0 20px;
+      width: 100%;
+      padding: 12px 10px;
+      font-size: 19px;
+      background-color: #161b22;
+      border: 1px solid #fff;
+      border-radius: 10px;
+    }
+    label {
+      position: absolute;
+      left: 11px;
+      top: 25px;
+      z-index: 5;
+      font-size: 19px;
+      transition: all 0.1s ease-in-out;
+    }
+    input:hover + label,
+    input.active + label,
+    label:hover {
+      left: 7px;
+      top: -7px;
+      font-size: 14px;
+    }
+  }
+  .rememberMe {
+    display: flex;
+  }
+  .rememberMe-check {
+    margin-right: 9px;
+    width: 15px;
+    height: 15px;
+    cursor: pointer;
+  }
+  .create-account {
+    margin: 20px 0;
+    &__btn {
+      color: $blue;
+    }
+  }
+  .already-have {
+    margin-bottom: 20px;
+    &__btn {
+      color: $blue;
+    }
+  }
+  .register__bottom {
+    text-align: center;
+  }
+}
+
+.dashboard {
+  &__title {
+    position: relative;
+    .exit-link {
+      position: absolute;
+      right: 0;
+      font-size: 15px;
+      top: 0;
+      a {
+        color: $blue;
+      }
+    }
+  }
+  &__form-field {
+    input {
+      color: #fff;
+      width: 100%;
+      padding: 10px 7px;
+      font-size: 18px;
+      background-color: #161b22;
+      border: 1px solid #fff;
+      border-radius: 10px;
+      margin: 5px 0 15px;
+    }
+  }
+  &__items {
+    margin-top: 50px;
+  }
+  &-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 20px 0;
+    border-bottom: 1px dashed #fff;
+    &:first-child {
+      border-top: 1px dashed #fff;
+    }
+    &__name {
+      font-size: 20px;
+      font-weight: bold;
+    }
+    &__windows {
+      display: flex;
+      justify-content: flex-end;
+    }
+    &__btns {
+      margin-top: 10px;
+      text-align: end;
+    }
+    &__btn {
+      font-size: 16px;
+      padding: 4px 11px;
+      &:not(:last-child) {
+        margin-right: 10px;
+      }
+    }
+  }
+  &-item__window {
+    position: relative;
+    width: 45%;
+    &:first-child {
+      margin-bottom: 10px;
+      margin-right: 10px;
+    }
+    input {
+      width: 100%;
+      color: #fff;
+      padding: 7px 30px 7px 5px;
+      font-size: 18px;
+      background-color: #161b22;
+      border: 1px solid #fff;
+      border-radius: 10px;
+    }
+    .button-reveal {
+      position: absolute;
+      top: 7px;
+      right: 6px;
+      background-color: transparent;
+      border: none;
+      outline: none;
+      cursor: pointer;
+      img {
+        width: 23px;
+        height: 23px;
+        object-fit: cover;
+      }
+    }
+    &.edit-input {
+      input {
+        border: 1px solid #03521f;
+      }
+    }
+  }
+}
+
+@import "media";

@@ -1,0 +1,24 @@
+@media (max-width: 600px) {
+    .title {
+        text-align: left;
+    }
+    .dashboard-item__info {
+        margin-top: 15px;
+    }
+    .dashboard__title .exit-link {
+        position: absolute;
+        right: 0;
+        font-size: 15px;
+        top: 0;
+    }
+    .dashboard-item {
+        flex-direction: column;
+        align-items: stretch;
+    }
+    .dashboard-item__btns {
+        text-align: center;
+    }
+    .dashboard-item__window {
+        width: 50%;
+    }
+}
